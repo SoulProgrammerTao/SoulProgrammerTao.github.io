@@ -42,17 +42,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/common.css"/>
-      <url>/css/common.css</url>
-      
-        <content type="html"><![CDATA[#nav {  width: 1200px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
