@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./index-COSrhMVe.js";const c={},o={src:"https://www.glutrans.com",frameborder:"0",style:{width:"100%",height:"100vh"}};function s(n,a){return r(),t("iframe",o)}const f=e(c,[["render",s]]);export{f as default};
