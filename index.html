@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物流信息跟踪</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome图标 -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <!-- 配置Tailwind自定义颜色 -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#165DFF',
+              secondary: '#6B7280',
+              light: '#F3F4F6',
+              border: '#E5E7EB'
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        }
+      }
+    </script>
+    
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .timeline-line {
+          @apply absolute left-3 top-6 bottom-0 w-0.5 bg-gray-200;
+        }
+        .timeline-dot {
+          @apply absolute left-3 w-2 h-2 rounded-full bg-primary transform -translate-x-1/2;
+        }
+        .timeline-dot-past {
+          @apply bg-primary;
+        }
+        .timeline-dot-future {
+          @apply bg-gray-300;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-mSx2iPjD.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <!-- 简单的交互效果脚本 -->
+    <script>
+      // 页面加载时的淡入效果
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('transition-opacity', 'duration-500');
+        document.body.style.opacity = '1';
+      });
+    </script>
+  </body>
+</html>
